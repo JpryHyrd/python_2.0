@@ -5,3 +5,15 @@
 (или 0, 3, 4, 5 - если индексация начинается с нуля),
 т.к. именно в этих позициях первого массива стоят четные числа.
 """
+import random
+a = []
+for i in range(100):
+    a.append(random.randrange(100))
+print(a)
+b = []
+g = 0
+for i in a:
+    if i % 2 == 0:
+        b.append(g)
+    g += 1
+print(b)
